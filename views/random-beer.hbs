@@ -1,0 +1,16 @@
+<h1>Rndm - BEERS</h1>
+
+<h2> {{this.name}} </h2>
+<img src="{{this.image_url}}" alt="{{this.tagline}}"  height="200">
+<p>{{this.description}}</p>
+<p>{{this.tagline}}</p>
+
+<h3>Food Pairing</h3>
+<ul>
+  {{#each this.food_pairing}}
+      <li>{{this}}</li>   
+  {{/each }}
+</ul>
+
+<h3>Brewers Tips</h3>
+<p>{{this.brewers_tips}}</p>
